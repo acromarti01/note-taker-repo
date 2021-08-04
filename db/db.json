@@ -1,6 +1,10 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
+        "title": "Title Success",
+        "text": "Went into the db json"
     }
 ]
