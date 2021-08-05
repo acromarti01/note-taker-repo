@@ -7,14 +7,15 @@ notes.get("/notes", async(request, response) =>{
     response.json(JSON.parse(data));
 });
 
-notes.post("/notes", (request, response) =>{
-    console.log("THIS IS THE REQUEST BODY \n", request.body);
+notes.post("/notes", async(request, response) =>{
     const note = {
         title: request.body.title,
         text: request.body.text,
         id: uuidv4()
     };
     readAndAppend(note, './db/db.json');
+    const data = await readFromFile("./db/db.json", "utf8");
+    response.json(JSON.parse(data));
 });
 
 module.exports = notes;

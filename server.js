@@ -22,5 +22,5 @@ app.get("/notes", (request, response) =>{
 app.get("*", (request, response) =>{
     response.sendFile(path.join(__dirname, "/public/index.html"))
 });
-// GET Route for
+
 app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT} 🚀`));

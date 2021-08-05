@@ -1,27 +1,3 @@
 [
-    {
-        "title": "Call bank on Friday",
-        "text": "Need to get new bank card",
-        "id": "0d7eb1d0-5e5b-4312-a663-0850730f52b5"
-    },
-    {
-        "title": "Reschedule delivery",
-        "text": "Pickup new oven",
-        "id": "5139bebc-f442-475c-ac09-20ccdade8d55"
-    },
-    {
-        "title": "Finish payroll",
-        "text": "Needs to be done by Friday",
-        "id": "6d4b57f6-8e22-4299-aee5-328825228bbc"
-    },
-    {
-        "title": "Check in with clients",
-        "text": "Have dinner with clients at the Marriott Hotel",
-        "id": "0b0e0324-cbe1-4e9b-9f30-eb5ffaf7c666"
-    },
-    {
-        "title": "Client lunch on Thursday",
-        "text": "Lunch at 1pm at IHOP",
-        "id": "1b2ef2b0-30ba-4696-a047-e7b41c26da97"
-    }
+   
 ]
