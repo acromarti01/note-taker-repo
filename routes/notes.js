@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { readFromFile, readAndAppend } = require("../helpers/fsUtils");
+const { readFromFile, readAndAppend, writeToFile } = require("../helpers/fsUtils");
 const { v4: uuidv4 } = require('uuid');
 
 notes.get("/notes", async(request, response) =>{
@@ -16,6 +16,20 @@ notes.post("/notes", async(request, response) =>{
     readAndAppend(note, './db/db.json');
     const data = await readFromFile("./db/db.json", "utf8");
     response.json(JSON.parse(data));
+});
+
+
+//fetch(`/api/notes/${id}`, {
+
+notes.delete("/notes/:id", async(request, response) => {
+    const id = request.params.id;
+    const data = await readFromFile("./db/db.json", "utf8");
+    const jsonData = JSON.parse(data);
+    const filteredJsonData = jsonData.filter((note) => note.id !== id);
+
+    writeToFile("./db/db.json", filteredJsonData);
+
+    response.json(`Note "${id}" has been deleted`);
 });
 
 module.exports = notes;
