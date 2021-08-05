@@ -1,1 +1,27 @@
-[]
+[
+    {
+        "title": "Call bank on Friday",
+        "text": "Need to replace debit card",
+        "id": "b2ac8c69-e5d4-4a01-96b8-07a7652b352d"
+    },
+    {
+        "title": "Reschedule delivery",
+        "text": "New computers are rescheduled for September 3rd",
+        "id": "db61a6bf-2023-4672-8d7a-4664f0ce1ce5"
+    },
+    {
+        "title": "Finish payroll",
+        "text": "Payroll has to be finished by Friday",
+        "id": "d4a2dacc-9494-4b33-89f2-40ef6d641a7b"
+    },
+    {
+        "title": "Check in with clients",
+        "text": "Meetup with the clients at the Marriott Hotel",
+        "id": "f16533bc-8e91-4b38-9b62-e2a18fd8a3da"
+    },
+    {
+        "title": "Client lunch on Thursday",
+        "text": "Lunch is at 1pm at IHOP",
+        "id": "ed312091-01f8-4e08-8256-86a3f358ca8d"
+    }
+]

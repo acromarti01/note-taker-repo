@@ -6,6 +6,10 @@
 
 The project allows the user to write and save notes.
 
+## ScreenShot
+
+![Image](./images/screenshot.png)
+
 ## Table of Contents
 
 - [Installation](#installation)
