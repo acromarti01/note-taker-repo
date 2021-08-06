@@ -18,9 +18,6 @@ notes.post("/notes", async(request, response) =>{
     response.json(JSON.parse(data));
 });
 
-
-//fetch(`/api/notes/${id}`, {
-
 notes.delete("/notes/:id", async(request, response) => {
     const id = request.params.id;
     const data = await readFromFile("./db/db.json", "utf8");
